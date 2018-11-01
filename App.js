@@ -9,6 +9,7 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 import HomeScreen from './src/components/home/HomeScreen';
+import LoginScreen from './src/components/login/LoginScreen';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -32,7 +33,7 @@ const instructions = Platform.select({
 export default class App extends  React.Component {
   render() {
     return (
-      <HomeScreen></HomeScreen>
+      <LoginScreen></LoginScreen>
     )
   }
 }
