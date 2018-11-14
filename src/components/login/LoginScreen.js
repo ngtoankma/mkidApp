@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import { Text, View ,StyleSheet} from 'react-native';
 import Button from './../common/Button';
+import Textinput from './../common/Textinput';
+
 
 
 
@@ -24,8 +26,8 @@ class LoginScreen extends Component {
     return (
       <View  style={{ flex: 1, justifyContent: 'center', alignItems: 'center' ,backgroundColor:'white'}}>
        <Text style={styles.red}>login screen  !</Text>
-   
-       <Button style={{backgroundColor:'red'}}><Text>Login hhh</Text></Button>
+      <Textinput style={styles.input}></Textinput>
+       <Button style={{backgroundColor:'red'}}><Text>Login h gggggghh</Text></Button>
  
        
       </View>
@@ -48,5 +50,13 @@ const styles = StyleSheet.create({
   red: {
     color: 'red',
   },
+  input: {
+    width: 50,
+    height:200,
+    borderRadius:4,
+    borderWidth:1,
+    borderColor:'red',
+    backgroundColor:'red'
+  }
 });
 export default LoginScreen;

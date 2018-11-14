@@ -1,14 +1,14 @@
 import React from 'react';
-import { TouchableOpacity, StyleSheet } from 'react-native';
-
-const Button = ({ onPress, children ,styles }) => {
+import { TouchableOpacity, StyleSheet,TextInput,Dimensions ,Text} from 'react-native';
+width = Dimensions.get('window').width-10;
+const Textinput = ({ styles }) => {
   if (!styles) {
     styles = {
-
       borderRadius:4,
       borderWidth:1,
       borderColor:'red',
-      backgroundColor:'red'
+      backgroundColor:'blue',
+      width:width,
     };
   } else {
 
@@ -21,10 +21,12 @@ const Button = ({ onPress, children ,styles }) => {
   }
 
   return (
-    <TouchableOpacity onPress={onPress} style={styles}>
-      {children}
-    </TouchableOpacity>
+  
+    <TextInput  style={styles}>
+<Text>{width}</Text>
+    </TextInput>
+
   );
 };
 
-export default Button;
+export default Textinput;
